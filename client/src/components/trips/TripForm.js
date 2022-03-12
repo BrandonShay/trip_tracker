@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const TripForm = ({ addTrip, id, name, updateTrip, setTrip }) => {
+const TripForm = ({ addTrip, id, name, updateTrip }) => {
   const [trip, setTrip] = useState({ name: ''})
 
   useEffect( () => {
@@ -13,7 +13,7 @@ const TripForm = ({ addTrip, id, name, updateTrip, setTrip }) => {
     e.preventDefault()
     if (id) {
       updateTrip(id, trip)
-      setEdit(false)
+      setTrip(false)
     } else {
       addTrip(trip)
     }

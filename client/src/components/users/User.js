@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import UserForm from './UserForm';
-import Trips from '../trips';
+// import Trips from '../trips';
 import { Link } from 'react-router-dom';
 const User = ({ id, email, updateUser, deleteUser }) => {
   const [editing, setEdit] = useState(false)
@@ -19,13 +19,13 @@ const User = ({ id, email, updateUser, deleteUser }) => {
         <>
           <button
             onClick={() => setEdit(true)}
-            style={styles.btn}
+            // style={styles.btn}
           >
             Edit
           </button>
           <button
             onClick={() => deleteUser(id)}
-            style={styles.deleteBtn}
+            // style={styles.deleteBtn}
           >
             Delete
           </button>

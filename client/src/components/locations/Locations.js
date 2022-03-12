@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import LocationForm from './LocationForm';
-import LocatonList from './LocationList';
+import LocationList from './LocationList';
 
 const Locations = () => {
   const { tripId } = useParams()

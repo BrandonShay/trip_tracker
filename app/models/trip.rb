@@ -1,6 +1,5 @@
 class Trip < ApplicationRecord
-  belongs_to :User
-  has_many :locations, dependant: :destroy
-  
+  belongs_to :user
+  has_many :locations, dependent: :destroy
   validates :name, presence: true
 end
