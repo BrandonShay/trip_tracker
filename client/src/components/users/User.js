@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import UserForm from './UserForm';
-// import Trips from '../trips';
+import Trips from '../trips/Trips';
 import { Link } from 'react-router-dom';
 const User = ({ id, email, updateUser, deleteUser }) => {
   const [editing, setEdit] = useState(false)

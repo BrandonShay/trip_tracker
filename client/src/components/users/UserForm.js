@@ -29,7 +29,7 @@ const UserForm = ({ addUser, id, email, updateUser, setEdit }) => {
           name='email'
           value={user.email}
           onChange={ (e) => setUser({ ...user, email: e.target.value })}
-          placeholder='User'
+          placeholder='Email'
           required
         />
         <button type="submit">Submit</button>
